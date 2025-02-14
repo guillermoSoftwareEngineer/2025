@@ -68,12 +68,11 @@
 }
 
 .hero-button:hover {
-  background: var(--orange-color); /* Fondo naranja al hacer hover */
+  background: #2B1CC4; /* Fondo naranja al hacer hover */
 }
 
 /* Estilos para la sección de destacados */
 .highlights {
-  padding: 80px 20px;
   text-align: center;
   background-color: var(--secondary-color); /* Fondo secundario */
 }
@@ -87,17 +86,17 @@
 .highlight-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 20px;
 }
 
 .card {
-  background-color: var(--accent-color); /* Fondo de acento */
+  background-color: #164E6E; /* Fondo de acento */
   padding: 20px;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
 }
 
 .card h3 {
