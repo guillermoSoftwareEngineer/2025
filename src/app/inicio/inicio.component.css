@@ -1,80 +1,166 @@
-/* Estilos para la sección hero */
-.hero {
-  background-color: #6A0572;
-  color: white;
-  padding: 100px 20px;
+/* Paleta de colores moderna y oscura */
+:root {
+  --primary-color: #1A1A2E; /* Fondo oscuro */
+  --secondary-color: #16213E; /* Fondo secundario */
+  --accent-color: #0F3460; /* Color de acento */
+  --highlight-color: #E94560; /* Color de resalte */
+  --text-light: #FFFFFF; /* Texto claro */
+  --text-dark: #000000; /* Texto oscuro */
+  --gold-color: #FFD700; /* Color dorado */
+  --orange-color: #F4A261; /* Color naranja */
+}
+
+/* Estilos para el contenedor hero */
+.hero-container {
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
   text-align: center;
+  max-height: 50%;
+  max-width: 100%;
+  background-color: var(--primary-color); /* Fondo oscuro */
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.hero-parallax {
+  background-image: url('../../assets/images/image.png'); /* Ruta de la imagen */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.hero-content {
+  padding: 20px;
+  background-color: rgba(26, 26, 46, 0.7); /* Fondo semitransparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.hero-content .btn {
-  background-color: #F4A261;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; /* Texto dorado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-subtitle {
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  margin: 20px 0;
+  color: white; /* Texto claro */
+  animation: fadeIn 2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-content .btn:hover {
-  background-color: #E76F51;
+.hero-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: white;
+  background: #164E6E;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero-button:hover {
+  background: var(--orange-color); /* Fondo naranja al hacer hover */
 }
 
 /* Estilos para la sección de destacados */
 .highlights {
-  padding: 50px 20px;
+  padding: 80px 20px;
   text-align: center;
+  background-color: var(--secondary-color); /* Fondo secundario */
 }
 
 .highlights h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
+  color: var(--gold-color); /* Texto dorado */
 }
 
 .highlight-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
 .card {
-  background-color: #f4f4f4;
+  background-color: var(--accent-color); /* Fondo de acento */
   padding: 20px;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
+  color: var(--text-light); /* Texto claro */
 }
 
 .card p {
   font-size: 1rem;
   margin-bottom: 20px;
+  color: var(--text-light); /* Texto claro */
 }
 
 .card .btn {
-  background-color: #6A0572;
-  color: white;
+  background-color: var(--highlight-color); /* Color de resalte */
+  color: var(--text-light); /* Texto claro */
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
 
 .card .btn:hover {
-  background-color: #4B0352;
+  background-color: var(--orange-color); /* Fondo naranja al hacer hover */
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Diseño Responsivo */
+@media screen and (min-width: 600px) {
+  .hero-title {
+      font-size: 2.5rem; /* Tamaño más grande para tablets */
+  }
+  .hero-subtitle {
+      font-size: 1.2rem;
+  }
+  .hero-button {
+      font-size: 1rem;
+      padding: 12px 25px; /* Botón más grande */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-title {
+      font-size: 3rem; /* Tamaño grande para desktops */
+  }
+  .hero-subtitle {
+      font-size: 1.5rem;
+  }
+  .hero-button {
+      font-size: 1.2rem;
+      padding: 15px 30px;
+  }
 }
