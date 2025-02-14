@@ -1,0 +1,63 @@
+/* Estilos para la sección de proyectos */
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #6A0572;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.project-card .btn {
+  background-color: #6A0572;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn.secondary {
+  background-color: #F4A261;
+}
+
+.project-card .btn:hover {
+  background-color: #4B0352;
+}
+
+.project-card .btn.secondary:hover {
+  background-color: #E76F51;
+}

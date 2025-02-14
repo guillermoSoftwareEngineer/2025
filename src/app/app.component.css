@@ -1,0 +1,169 @@
+/* Contenedor para aislar el menú */
+.menu-container {
+  width: 100%;
+}
+
+/* Header del menú */
+.menu-container .header-modern {
+  position: relative;
+  max-width: 100%;
+  align-self: center;
+  padding: 10px;
+  background-color: var(--primary, #6A0572);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+/* Botón del menú hamburguesa que expande el slider */
+.menu-container .menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menu-container .menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-light, #FFFFFF);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animaciones para el menú activo del slider */
+.menu-container .menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-container .menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-container .menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navegación del menú */
+.menu-container .nav-modern {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Oculta por defecto el menú */
+  width: 60%;
+  height: 100%;
+  background-color: var(--secondary, #F4A261);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s ease-in-out;
+  z-index: 999; /* Asegura que esté al frente de todos los demás menús */
+}
+
+.menu-container .nav-modern img {
+  max-width: 30%;
+  margin-top: 20%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid red;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--background, #F4A261);
+  z-index: 1000;
+}
+
+/* Botón X para cerrar el menú */
+.menu-container .close-menu {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--hover, #E76F51);
+  color: var(--text-light, #FFFFFF);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+.menu-container .close-menu:hover {
+  background-color: var(--background, #264653);
+  color: var(--hover, #E76F51);
+}
+
+.menu-container .nav-modern.active {
+  right: 0; /* Aparece desde la derecha */
+}
+
+.menu-container .nav-modern ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-container .nav-modern ul li a {
+  color: var(--text-light, #FFFFFF);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid var(--text-light, #FFFFFF);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-container .nav-modern ul li a:hover {
+  background-color: var(--hover, #E76F51);
+  color: var(--background, #264653);
+}
+
+/* Estilos para pantallas mayores a 425px */
+@media screen and (min-width: 426px) {
+  .menu-container .menu-toggle {
+      display: none; /* Oculta el menú hamburguesa en tamaños grandes */
+  }
+
+  .menu-container .close-menu {
+      display: none;
+  }
+
+  .menu-container .nav-modern .logo-modern {
+      max-width: 8%;
+      max-height: 55%;
+      margin-top: 0;
+      left: 20%;
+  }
+
+  .menu-container .nav-modern {
+      position: static;
+      width: auto;
+      height: auto;
+      flex-direction: row;
+      background-color: transparent;
+      justify-content: center;
+  }
+
+  .menu-container .nav-modern ul {
+      flex-direction: row;
+      gap: 20px;
+  }
+
+  .menu-container .nav-modern ul li a {
+      border: none;
+      font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container .nav-modern .logo-modern {
+      left: 10%;
+  }
+}
