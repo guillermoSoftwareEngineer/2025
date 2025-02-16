@@ -8,7 +8,7 @@
 .about-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #6A0572;
+  color: #164E6E;
 }
 
 .about-content p {
@@ -18,6 +18,46 @@
   color: #333;
 }
 
+/* Estilos para la sección de video */
+.video-container {
+  max-width: 70%;
+  margin: 40px auto; /* Centrado horizontalmente */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative; /* Necesario para posicionar el botón de mute */
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilos para el botón de mute */
+.mute-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.mute-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para la lista de habilidades */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -29,15 +69,16 @@
 }
 
 .skills-list li {
-  background-color: #6A0572;
+  background-color: #869EAD;
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 0.9rem;
 }
 
+/* Estilos para el botón */
 .about-content .btn {
-  background-color: #F4A261;
+  background-color: #2C7CCC;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -48,4 +89,129 @@
 
 .about-content .btn:hover {
   background-color: #E76F51;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .about-content h1 {
+      font-size: 2rem;
+  }
+
+  .about-content p {
+      font-size: 1rem;
+  }
+
+  .video-container {
+      max-width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+      margin: 20px auto; /* Centrado horizontalmente */
+  }
+
+  .skills-list li {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+  }
+
+  .about-content .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+
+  /* Ajustes para el botón de mute en pantallas pequeñas */
+  .mute-button {
+      width: 35px; /* Tamaño ligeramente más pequeño */
+      height: 35px;
+      font-size: 1rem; /* Tamaño de ícono más pequeño */
+      bottom: 5px; /* Ajuste de posición */
+      right: 5px;
+  }
+}
+
+
+/* Estilos generales del footer */
+.footer {
+  margin-top: 2.5%;
+  background: linear-gradient(135deg, #084060, #181A1F);
+  padding: 40px 20px;
+  color: #FFFFFF;
+  border-top: 3px solid #3A3D46;
+}
+
+/* Contenedor del footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Sección de contacto */
+.footer-contact {
+  max-width: 500px;
+  text-align: center;
+}
+
+.footer-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #B0BEC5;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de íconos */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilos de los íconos */
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #282C34;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-icon-link:hover .footer-icon {
+  transform: scale(1.1);
+  background-color: #3A3D46;
+}
+
+/* Diseño Responsivo */
+@media (min-width: 768px) {
+  .footer-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .footer-contact {
+      text-align: left;
+  }
+
+  .footer-icons {
+      justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .footer-contact {
+      max-width: 600px;
+  }
 }

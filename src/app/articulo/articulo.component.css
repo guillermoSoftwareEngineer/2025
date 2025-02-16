@@ -1,0 +1,102 @@
+/* Estilos generales del artículo */
+.articulo {
+  background-color: #1A1A2E;
+  padding: 40px 20px;
+  color: #FFFFFF;
+}
+
+.articulo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Imagen del proyecto */
+.articulo-imagen {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imagen-proyecto {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.imagen-proyecto:hover {
+  transform: scale(1.05);
+}
+
+/* Descripción del proyecto */
+.articulo-descripcion {
+  background-color: #16213E;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.articulo-titulo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #FFD700;
+}
+
+.articulo-texto {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #B0BEC5;
+  margin-bottom: 20px;
+}
+
+/* Logos de tecnologías */
+.tecnologias {
+  margin-top: 20px;
+}
+
+.tecnologias-titulo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.tecnologias-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tecnologia-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #282C34;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tecnologia-logo:hover {
+  transform: scale(1.1);
+  background-color: #3A3D46;
+}
+
+/* Diseño Responsivo */
+@media (min-width: 768px) {
+  .articulo-container {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .articulo-imagen {
+      flex: 1;
+  }
+
+  .articulo-descripcion {
+      flex: 1;
+  }
+}

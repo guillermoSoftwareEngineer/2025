@@ -9,7 +9,7 @@
   max-width: 100%;
   align-self: center;
   padding: 10px;
-  background-color: #084060;
+  background: linear-gradient(135deg, #084060, #181A1F);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@
   right: -100%; /* Oculta por defecto el menú */
   width: 60%;
   height: 100%;
-  background-color: var(--secondary, #F4A261);
+  background: linear-gradient(135deg, #084060, #181A1F);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +82,7 @@
 .menu-container .close-menu {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: var(--hover, #E76F51);
+  background-color: var(--hover, blue);
   color: var(--text-light, #FFFFFF);
   border: none;
   border-radius: 5px;
@@ -94,7 +94,7 @@
 
 .menu-container .close-menu:hover {
   background-color: var(--background, #264653);
-  color: var(--hover, #E76F51);
+  color: var(--hover, white);
 }
 
 .menu-container .nav-modern.active {
@@ -102,6 +102,7 @@
 }
 
 .menu-container .nav-modern ul {
+  text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;

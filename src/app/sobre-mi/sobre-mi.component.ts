@@ -10,5 +10,14 @@ import { RouterModule } from '@angular/router';
   styleUrl: './sobre-mi.component.css'
 })
 export class SobreMiComponent {
+  isMuted: boolean = true; // Estado inicial: el video está muteado
 
+  // Función para alternar el mute
+  toggleMute(): void {
+    const video = document.querySelector('.video') as HTMLVideoElement;
+    if (video) {
+      video.muted = !video.muted;
+      this.isMuted = video.muted;
+    }
+  }
 }
