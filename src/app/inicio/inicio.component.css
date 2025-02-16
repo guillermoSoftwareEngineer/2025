@@ -91,7 +91,7 @@
 }
 
 .card {
-  background-color: #164E6E; /* Fondo de acento */
+  background-color: #869ead;
   padding: 20px;
   border-radius: 10px;
   width: 300px;
@@ -102,13 +102,17 @@
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: var(--text-light); /* Texto claro */
+  color: white /* Texto claro */
 }
 
 .card p {
   font-size: 1rem;
   margin-bottom: 20px;
   color: var(--text-light); /* Texto claro */
+}
+
+.card a {
+  background-color: #869EAD;
 }
 
 .card .btn {
@@ -123,6 +127,18 @@
 
 .card .btn:hover {
   background-color: var(--orange-color); /* Fondo naranja al hacer hover */
+}
+
+/* Nuevas clases para la imagen de cada card */
+.card-image {
+  margin-bottom: 15px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
 }
 
 /* Animaciones */
