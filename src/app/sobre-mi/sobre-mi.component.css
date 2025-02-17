@@ -30,31 +30,9 @@
 
 .video {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Estilos para el botón de mute */
-.mute-button {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  height: 400px; /* Altura fija para el iframe */
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-.mute-button:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
 }
 
 /* Estilos para la lista de habilidades */
@@ -106,6 +84,10 @@
       margin: 20px auto; /* Centrado horizontalmente */
   }
 
+  .video {
+      height: 250px; /* Altura más pequeña para pantallas móviles */
+  }
+
   .skills-list li {
       font-size: 0.8rem;
       padding: 8px 16px;
@@ -115,17 +97,7 @@
       font-size: 0.9rem;
       padding: 8px 16px;
   }
-
-  /* Ajustes para el botón de mute en pantallas pequeñas */
-  .mute-button {
-      width: 35px; /* Tamaño ligeramente más pequeño */
-      height: 35px;
-      font-size: 1rem; /* Tamaño de ícono más pequeño */
-      bottom: 5px; /* Ajuste de posición */
-      right: 5px;
-  }
 }
-
 
 /* Estilos generales del footer */
 .footer {

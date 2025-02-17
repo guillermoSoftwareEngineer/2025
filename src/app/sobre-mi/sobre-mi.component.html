@@ -1,6 +1,6 @@
 <section class="about">
   <div class="about-content">
-      <h1 >Sobre Mí</h1>
+      <h1>Sobre Mí</h1>
       <p>
         ¡Hola! Soy un tecnologo con una sólida base en electricidad y electrónica, respaldada por más de 10
         años de experiencia profesional en electrónica de potencia y trabajos eléctricos. Actualmente estoy
@@ -22,17 +22,18 @@
         multidisciplinarios y seguir creciendo en una industria que siempre está en movimiento.
       </p>
 
-      <!-- Sección de video -->
-      <div class="video-container">
-          <video class="video" autoplay muted loop>
-              <source src="./assets/video/videPortafolio2025.mp4" type="video/mp4">
-              Tu navegador no soporta la reproducción de video.
-          </video>
-          <button class="mute-button" (click)="toggleMute()">
-            <span *ngIf="isMuted">🔇</span>
-            <span *ngIf="!isMuted">🔊</span>
-        </button>
-      </div>
+<!-- Sección de video de YouTube -->
+<div class="video-container">
+  <iframe
+      class="video"
+      width="100%"
+      height="400"
+      src="https://www.youtube.com/embed/I3BHaN2sNpY?autoplay=1&mute=1&loop=1&playlist=I3BHaN2sNpY"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+  </iframe>
+</div>
 
       <ul class="skills-list">
           <li>Angular</li>
