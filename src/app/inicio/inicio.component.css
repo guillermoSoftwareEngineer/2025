@@ -116,8 +116,8 @@
 }
 
 .card .btn {
-  background-color: var(--highlight-color); /* Color de resalte */
-  color: var(--text-light); /* Texto claro */
+  background-color: #3A303B; /* Color de resalte */
+  color: white; /* Texto claro */
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -126,7 +126,7 @@
 }
 
 .card .btn:hover {
-  background-color: var(--orange-color); /* Fondo naranja al hacer hover */
+  background-color: #0b3954; /* Fondo naranja al hacer hover */
 }
 
 /* Nuevas clases para la imagen de cada card */
@@ -181,91 +181,4 @@
 }
 
 
-/* Estilos generales del footer */
-.footer {
-  margin-top: 2.5%;
-  background: linear-gradient(135deg, #084060, #181A1F);
-  padding: 40px 20px;
-  color: #FFFFFF;
-  border-top: 3px solid #3A3D46;
-}
 
-/* Contenedor del footer */
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Sección de contacto */
-.footer-contact {
-  max-width: 500px;
-  text-align: center;
-}
-
-.footer-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.footer-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #B0BEC5;
-  margin-bottom: 20px;
-}
-
-/* Contenedor de íconos */
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Estilos de los íconos */
-.footer-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #282C34;
-  padding: 10px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.footer-icon-link:hover .footer-icon {
-  transform: scale(1.1);
-  background-color: #3A3D46;
-}
-
-/* Diseño Responsivo */
-@media (min-width: 768px) {
-  .footer-container {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-  }
-
-  .footer-contact {
-      text-align: left;
-  }
-
-  .footer-icons {
-      justify-content: flex-end;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer-container {
-      flex-direction: row;
-      align-items: center;
-  }
-
-  .footer-contact {
-      max-width: 600px;
-  }
-}

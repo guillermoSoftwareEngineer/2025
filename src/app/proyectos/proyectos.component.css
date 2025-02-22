@@ -8,7 +8,7 @@
 .projects h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #6A0572;
+  color: #3366cc;
 }
 
 .project-list {
@@ -27,6 +27,14 @@
   text-align: left;
 }
 
+.project-image {
+  width: 100%; /* La imagen ocupa el 100% del ancho de la tarjeta */
+  height: 200px; /* Altura fija para la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin distorsionar */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Espacio entre la imagen y el título */
+}
+
 .project-card h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
@@ -40,7 +48,7 @@
 }
 
 .project-card .btn {
-  background-color: #6A0572;
+  background-color: #3366cc;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -51,7 +59,7 @@
 }
 
 .project-card .btn.secondary {
-  background-color: #F4A261;
+  background-color: #084060;
 }
 
 .project-card .btn:hover {
@@ -61,3 +69,15 @@
 .project-card .btn.secondary:hover {
   background-color: #E76F51;
 }
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .project-card {
+      width: 100%; /* Las tarjetas ocupan el 100% del ancho en pantallas pequeñas */
+  }
+
+  .project-image {
+      height: 150px; /* Altura más pequeña para pantallas móviles */
+  }
+}
+

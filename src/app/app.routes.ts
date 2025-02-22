@@ -6,6 +6,8 @@ import { ArticulosComponent } from './articulos/articulos.component';
 import { ArticuloComponent } from './articulo/articulo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
+
+
 export const routes: Routes = [
   { path: '', component: InicioComponent, title: 'Inicio' }, // Ruta por defecto
   { path: 'sobre-mi', component: SobreMiComponent, title: 'Sobre mí' },
