@@ -5,15 +5,15 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { ArticuloComponent } from './articulo/articulo.component';
 import { ContactoComponent } from './contacto/contacto.component';
-
-
+import { ProyectoComponent } from './proyecto/proyecto.component';
 
 export const routes: Routes = [
-  { path: '', component: InicioComponent, title: 'Inicio' }, // Ruta por defecto
+  { path: '', component: InicioComponent, title: 'Inicio' },
   { path: 'sobre-mi', component: SobreMiComponent, title: 'Sobre mí' },
   { path: 'proyectos', component: ProyectosComponent, title: 'Proyectos' },
+  { path: 'proyecto/:id', component: ProyectoComponent, title: 'Detalles del Proyecto' },
   { path: 'articulos', component: ArticulosComponent, title: 'Artículos' },
   { path: 'articulo/:id', component: ArticuloComponent, title: 'Artículo' },
   { path: 'contacto', component: ContactoComponent, title: 'Contacto' },
-  { path: '**', redirectTo: '', pathMatch: 'full' }, // Redirige a Inicio si la ruta no existe
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

@@ -1,0 +1,28 @@
+<section class="proyecto-blog">
+  <div class="imagen-destacada">
+    <img [src]="imagenUrl" alt="Imagen del proyecto" class="proyecto-imagen" />
+  </div>
+  <div class="contenido-blog">
+    <h1 class="titulo-blog">{{ titulo }}</h1>
+    <p class="fecha-publicacion">{{ fechaPublicacion }}</p>
+    <div class="descripcion-blog">
+      <p>{{ descripcion }}</p>
+    </div>
+    <div class="explicacion-proyecto">
+      <h2>Explicación del Proyecto</h2>
+      <p>{{ explicacion }}</p>
+    </div>
+    <div class="desafios">
+      <h2>Desafíos</h2>
+      <ul>
+        <li *ngFor="let desafio of desafios">{{ desafio }}</li>
+      </ul>
+    </div>
+    <div class="tecnologias-blog">
+      <h2>Tecnologías Utilizadas</h2>
+      <div class="lista-tecnologias">
+        <span *ngFor="let tecnologia of tecnologias" class="tecnologia">{{ tecnologia }}</span>
+      </div>
+    </div>
+  </div>
+</section>
