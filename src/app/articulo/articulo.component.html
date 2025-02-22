@@ -2,28 +2,36 @@
   <div class="articulo-container">
       <!-- Imagen del proyecto -->
       <div class="articulo-imagen">
-          <img src="/src/assets/images/tesla.jpeg" alt="Proyecto 1" class="imagen-proyecto">
+          <!-- Cambiamos el src estático por [src]="articulo?.image" -->
+          <img [src]="articulo?.image" [alt]="articulo?.title" class="imagen-proyecto">
       </div>
 
       <!-- Descripción del proyecto -->
       <div class="articulo-descripcion">
-          <h2 class="articulo-titulo">Nombre del Proyecto</h2>
+          <!-- Cambiamos el título estático por {{ articulo?.title }} -->
+          <h2 class="articulo-titulo">{{ articulo?.title }}</h2>
+          <!-- Cambiamos la descripción estática por {{ articulo?.description }} -->
           <p class="articulo-texto">
-              Descripción detallada del proyecto. Aquí puedes hablar sobre los objetivos,
-              tecnologías utilizadas, desafíos enfrentados y resultados obtenidos.
+              {{ articulo?.description }}
           </p>
 
           <!-- Logos de tecnologías -->
           <div class="tecnologias">
               <h3 class="tecnologias-titulo">Tecnologías Utilizadas</h3>
               <div class="tecnologias-lista">
-                  <img src="./assets/images/tecnologias/angular.png" alt="Angular" class="tecnologia-logo">
-                  <img src="./assets/images/tecnologias/typescript.png" alt="TypeScript" class="tecnologia-logo">
-                  <img src="./assets/images/tecnologias/nodejs.png" alt="Node.js" class="tecnologia-logo">
-                  <img src="./assets/images/tecnologias/html5.png" alt="HTML5" class="tecnologia-logo">
-                  <img src="./assets/images/tecnologias/css3.png" alt="CSS3" class="tecnologia-logo">
+                  <!-- Recorremos el array de technologies usando *ngFor -->
+                  <ng-container *ngFor="let tech of articulo?.technologies">
+                    <img
+                      [src]="tech.image"
+                      [alt]="tech.alt"
+                      class="tecnologia-logo"
+                    />
+                  </ng-container>
               </div>
           </div>
       </div>
   </div>
 </section>
+
+<!-- Mantén este párrafo si quieres mostrar el id que se obtuvo de la URL -->
+<p>El artículo seleccionado tiene el id: {{ id }}</p>
