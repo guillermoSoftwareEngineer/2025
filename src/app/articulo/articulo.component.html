@@ -2,24 +2,24 @@
   <div class="articulo-container">
       <!-- Imagen del proyecto -->
       <div class="articulo-imagen">
-          <!-- Cambiamos el src estático por [src]="articulo?.image" -->
+          <!-- Cambio el src estatico por [src]="articulo?.image" -->
           <img [src]="articulo?.image" [alt]="articulo?.title" class="imagen-proyecto">
       </div>
 
       <!-- Descripción del proyecto -->
       <div class="articulo-descripcion">
-          <!-- Cambiamos el título estático por {{ articulo?.title }} -->
+          <!-- Cambio el título estatico por {{ articulo?.title }} -->
           <h2 class="articulo-titulo">{{ articulo?.title }}</h2>
-          <!-- Cambiamos la descripción estática por {{ articulo?.description }} -->
+          <!-- Cambio la descripción estatica por {{ articulo?.description }} -->
           <p class="articulo-texto">
               {{ articulo?.description }}
           </p>
 
-          <!-- Logos de tecnologías -->
+          <!-- Logos de tecnologias -->
           <div class="tecnologias">
-              <h3 class="tecnologias-titulo">Tecnologías Utilizadas</h3>
+              <h3 class="tecnologias-titulo">tecnologias Utilizadas</h3>
               <div class="tecnologias-lista">
-                  <!-- Recorremos el array de technologies usando *ngFor -->
+                  <!-- Recorremos el array de tecnologias usando *ngFor -->
                   <ng-container *ngFor="let tech of articulo?.technologies">
                     <img
                       [src]="tech.image"
@@ -33,5 +33,4 @@
   </div>
 </section>
 
-<!-- Mantén este párrafo si quieres mostrar el id que se obtuvo de la URL -->
-<p>El artículo seleccionado tiene el id: {{ id }}</p>
+

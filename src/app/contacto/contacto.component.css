@@ -2,14 +2,14 @@
 .contacto {
   padding: 50px 20px;
   text-align: center;
-  background-color: #1A1A2E; /* Fondo oscuro */
-  color: #FFFFFF; /* Texto claro */
+  background-color: #1A1A2E;
+  color: #FFFFFF;
 }
 
 .contacto-content h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #FFD700; /* Texto dorado */
+  color: #FFD700;
 }
 
 .contacto-content p {
@@ -22,8 +22,8 @@
 }
 
 .responsive-image {
-  max-width: 100%; /* La imagen se ajusta al ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -31,7 +31,7 @@
 /* Diseño responsive */
 @media screen and (min-width: 600px) {
   .contacto-content h1 {
-      font-size: 3rem; /* Tamaño más grande para tablets */
+      font-size: 3rem;
   }
 
   .contacto-content p {
@@ -39,13 +39,13 @@
   }
 
   .responsive-image {
-      max-width: 80%; /* Ajusta el tamaño de la imagen en tablets */
+      max-width: 80%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .responsive-image {
-      max-width: 50%; /* Ajusta el tamaño de la imagen en desktops */
+      max-width: 50%;
   }
 }
 

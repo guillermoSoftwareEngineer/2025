@@ -61,7 +61,7 @@
   justify-content: center;
   align-items: center;
   transition: right 0.5s ease-in-out;
-  z-index: 999; /* Asegura que esté al frente de todos los demás menús */
+  z-index: 999; /* Asegura que quede totalmente al frente */
 }
 
 .menu-container .nav-modern img {
@@ -129,7 +129,7 @@
 /* Estilos para pantallas mayores a 425px */
 @media screen and (min-width: 426px) {
   .menu-container .menu-toggle {
-      display: none; /* Oculta el menú hamburguesa en tamaños grandes */
+      display: none;
   }
 
   .menu-container .close-menu {

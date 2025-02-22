@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importa CommonModule
-import { RouterModule } from '@angular/router'; // Importa RouterModule para router-outlet
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true, // Asegúrate de que el componente sea standalone
-  imports: [CommonModule, RouterModule], // Importa CommonModule y RouterModule
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

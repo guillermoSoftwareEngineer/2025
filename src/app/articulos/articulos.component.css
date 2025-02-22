@@ -28,11 +28,11 @@
 }
 
 .article-image {
-  width: 100%; /* La imagen ocupa el 100% del ancho de la tarjeta */
-  height: 200px; /* Altura fija para la imagen */
-  object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin distorsionar */
-  border-radius: 10px; /* Bordes redondeados */
-  margin-bottom: 15px; /* Espacio entre la imagen y el título */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .article-card h2 {
@@ -64,11 +64,11 @@
 /* Diseño Responsivo */
 @media (max-width: 768px) {
   .article-card {
-      width: 100%; /* Las tarjetas ocupan el 100% del ancho en pantallas pequeñas */
+      width: 100%;
   }
 
   .article-image {
-      height: 150px; /* Altura más pequeña para pantallas móviles */
+      height: 150px;
   }
 }
 

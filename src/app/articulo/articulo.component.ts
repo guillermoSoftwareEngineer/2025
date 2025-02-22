@@ -20,11 +20,11 @@ export class ArticuloComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Se obtiene el parámetro 'id' de la URL
+    // Codigo para obtener el id
     this.id = this.route.snapshot.paramMap.get('id');
     console.log("El id del artículo renderizado es:", this.id);
 
-    // Si se encontró un id, se consulta la API simulada para obtener el artículo
+    // Condicional y manejo de error  de la busqueda de ID
     if (this.id) {
       this.http.get<any>(`api/articulos/${this.id}`).subscribe(
         data => {

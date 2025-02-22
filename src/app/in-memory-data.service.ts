@@ -6,7 +6,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: '1',
         title: 'Articulo 1',
-        image: '/src/assets/images/tesla.jpeg',
+        image: 'assets/images/tesla.jpeg',
         description: 'Descripción detallada del Articulo. Aquí puedes hablar sobre los objetivos, tecnologías utilizadas, desafíos enfrentados y resultados obtenidos.',
         technologies: [
           { name: 'Angular', image: './assets/images/tecnologias/angular.png', alt: 'Angular' },
