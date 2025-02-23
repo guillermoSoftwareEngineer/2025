@@ -5,7 +5,7 @@
   --fondo-contenido: #1e1e1e;
   --borde-oscuro: #333;
   --color-primario: #ff6f61;
-  --color-secundario: #6b5b95;
+  --color-secundario: #0b3954;
   --color-fecha: #888;
   --sombra: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -36,6 +36,7 @@
 
 .contenido-blog {
   color: var(--texto-oscuro);
+  text-align: center;
 }
 
 .titulo-blog {
@@ -54,16 +55,19 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .explicacion-proyecto {
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .explicacion-proyecto h2 {
   font-size: 1.8rem;
   color: var(--color-primario);
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .explicacion-proyecto p {
@@ -75,14 +79,16 @@
 .desafios h2,
 .tecnologias-blog h2 {
   font-size: 1.8rem;
-  color: var(--color-primario);
+  color: var(--color-fecha);
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .desafios ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .desafios li {
@@ -95,6 +101,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 
 .tecnologia {
@@ -103,6 +110,27 @@
   padding: 8px 15px;
   border-radius: 5px;
   font-size: 0.9rem;
+}
+
+/* Estilos para el botón del proyecto */
+.btn-proyecto {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--texto-oscuro);
+  background-color: var(--color-primario);
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.btn-proyecto:hover {
+  background-color: #175594;
+  transform: scale(1.05);
 }
 
 /* Responsive Design */
@@ -139,32 +167,9 @@
     padding: 6px 12px;
     font-size: 0.8rem;
   }
-}
- /* estilos boton de enlace al proyecto  */
- /* Estilos para el botón del proyecto */
-.btn-proyecto {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: var(--texto-oscuro);
-  background-color: var(--color-primario);
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: 20px;
-}
 
-.btn-proyecto:hover {
-  background-color: var(--color-secundario);
-  transform: scale(1.05);
-}
-
-/* Responsive Design para el botón */
-@media (max-width: 768px) {
   .btn-proyecto {
     font-size: 0.9rem;
     padding: 8px 16px;
-    width: 100%; /* Ocupa todo el ancho en móviles */
   }
 }
