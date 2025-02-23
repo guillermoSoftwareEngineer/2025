@@ -10,10 +10,11 @@
   --orange-color: #F4A261;
 }
 
+
+
 /* Estilos para el contenedor hero */
 .hero-container {
   position: relative;
-
   overflow: hidden;
   text-align: center;
   max-height: 50%;
@@ -39,7 +40,7 @@
 .hero-title {
   font-size: 2rem;
   font-weight: bold;
-  color: white; /* Texto blanco no funciono la variable CSS */
+  color: white; /* Texto blanco no funcionó la variable CSS */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -47,7 +48,7 @@
 .hero-subtitle {
   font-size: 1rem;
   margin: 20px 0;
-  color: white; /* Texto blanco no funciono la variable CSS */
+  color: white; /* Texto blanco no funcionó la variable CSS */
   animation: fadeIn 2s ease-in-out;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -89,24 +90,31 @@
 }
 
 .card {
-  background-color: #869ead;
+  background-color: #3366CC;
   padding: 20px;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para la tarjeta */
+.card:hover {
+  transform: scale(1.05); /* Escala la tarjeta ligeramente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
 }
 
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: white /* Texto claro blanco no finciono l variable CSS */
+  color: #949494;
 }
 
 .card p {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: var(--text-light);
+  color: #474747;
 }
 
 .card a {
@@ -115,7 +123,7 @@
 
 .card .btn {
   background-color: #3A303B;
-  color: white; /* Texto Blanco no funciono la variable CSS */
+  color: white; /* Texto Blanco no funcionó la variable CSS */
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -177,6 +185,3 @@
       padding: 15px 30px;
   }
 }
-
-
-

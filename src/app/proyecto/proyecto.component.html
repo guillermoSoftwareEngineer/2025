@@ -6,14 +6,13 @@
     <h1 class="titulo-blog">{{ titulo }}</h1>
     <p class="fecha-publicacion">{{ fechaPublicacion }}</p>
     <div class="descripcion-blog">
-      <p>{{ descripcion }}</p>
+      <!-- Usar innerHTML para renderizar el salto de línea -->
+      <p [innerHTML]="descripcion"></p>
     </div>
     <div class="explicacion-proyecto">
-      <h2>Explicación del Proyecto</h2>
       <p>{{ explicacion }}</p>
     </div>
     <div class="desafios">
-      <h2>Desafíos</h2>
       <ul>
         <li *ngFor="let desafio of desafios">{{ desafio }}</li>
       </ul>
