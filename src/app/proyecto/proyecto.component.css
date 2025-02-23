@@ -40,7 +40,7 @@
 
 .titulo-blog {
   font-size: 2.5rem;
-  color: var(--color-primario);
+  color: #949494;
   margin-bottom: 10px;
 }
 
@@ -69,7 +69,7 @@
 .explicacion-proyecto p {
   font-size: 1rem;
   line-height: 1.8;
-  color: var(--texto-oscuro);
+  color: #D6D6D6;
 }
 
 .desafios h2,
@@ -138,5 +138,33 @@
   .tecnologia {
     padding: 6px 12px;
     font-size: 0.8rem;
+  }
+}
+ /* estilos boton de enlace al proyecto  */
+ /* Estilos para el botón del proyecto */
+.btn-proyecto {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--texto-oscuro);
+  background-color: var(--color-primario);
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-proyecto:hover {
+  background-color: var(--color-secundario);
+  transform: scale(1.05);
+}
+
+/* Responsive Design para el botón */
+@media (max-width: 768px) {
+  .btn-proyecto {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    width: 100%; /* Ocupa todo el ancho en móviles */
   }
 }
