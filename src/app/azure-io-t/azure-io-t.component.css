@@ -1,0 +1,60 @@
+/* Contenedor principal */
+.documento-container {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Título */
+.documento-container h2 {
+  font-size: 2rem;
+  color: #164E6E;
+  margin-bottom: 20px;
+}
+
+/* Párrafo descriptivo */
+.documento-container p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Botón de descarga */
+.btn-descargar {
+  background-color: #2C7CCC;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-descargar:hover {
+  background-color: #E76F51;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .documento-container {
+    padding: 30px 15px;
+  }
+
+  .documento-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .documento-container p {
+    font-size: 1rem;
+  }
+
+  .btn-descargar {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

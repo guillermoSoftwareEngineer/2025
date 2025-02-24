@@ -22,7 +22,9 @@
         <span *ngFor="let tecnologia of tecnologias" class="tecnologia">{{ tecnologia }}</span>
       </div>
     </div>
-    <!-- Botón para abrir correctamente el enlace -->
-    <a [attr.href]="enlaceExterno" class="btn-proyecto" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+    <!-- Botón dinámico para enlaces externos e internos -->
+    <a (click)="redirigir()" class="btn-proyecto">
+      Ver Proyecto
+    </a>
   </div>
 </section>
