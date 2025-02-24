@@ -1,5 +1,5 @@
 /* Paleta de colores moderna y oscura */
-:root {
+:host {
   --primary-color: #1A1A2E;
   --secondary-color: #16213E;
   --accent-color: #0F3460;

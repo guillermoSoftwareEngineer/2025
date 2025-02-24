@@ -18,6 +18,35 @@
   color: #333;
 }
 
+/* Estilos específicos para el contenedor de la imagen 1 y el primer párrafo */
+.image-text-container {
+  display: flex;
+  flex-direction: column; /* Por defecto, apilamos los elementos en móvil */
+  align-items: center;
+  gap: 20px; /* Espacio entre la imagen y el párrafo */
+  margin-bottom: 40px; /* Espacio debajo del contenedor */
+}
+
+/* Estilos para pantallas mayores a 768px */
+@media (min-width: 768px) {
+  .image-text-container {
+    flex-direction: row; /* Colocamos los elementos en fila */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+  }
+
+  .image-text-container .image-container {
+    flex: 1; /* La imagen ocupa 1 parte del espacio */
+    max-width: 30%; /* Ajusta el ancho de la imagen */
+  }
+
+  .image-text-container .first-paragraph {
+    flex: 2; /* El párrafo ocupa 2 partes del espacio */
+    max-width: 60%; /* Ajusta el ancho del párrafo */
+    text-align: left; /* Alineamos el texto a la izquierda */
+  }
+}
+
 /* Estilos para la sección de video */
 .video-container {
   max-width: 70%;
@@ -44,7 +73,7 @@
   flex-wrap: wrap;
 }
 
-/* Estilos para la primera imagen */
+/* Estilos para la primera imagen (imagen1) */
 .about-image.imagen1 {
   width: 100%;
   max-width: 50%;
@@ -54,9 +83,9 @@
   transition: transform 0.3s ease;
 }
 
-/* Estilos para la segunda imagen */
+/* Estilos para la segunda imagen (imagen2) */
 .about-image.imagen2 {
-  max-width: 20%;
+  max-width: 50%;
   height: auto;
   border-radius: 50%;
   box-shadow: 1 4px 10px rgba(0, 0, 0, 0.1);
@@ -131,7 +160,7 @@
   }
 
   .about-image.imagen2 {
-    max-width: 20%;
+    max-width: 70%;
   }
 
   .skills-list li {
