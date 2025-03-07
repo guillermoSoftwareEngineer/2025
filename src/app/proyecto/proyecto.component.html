@@ -1,29 +1,42 @@
 <section class="proyecto-blog">
   <div class="imagen-destacada">
+    <!-- Imagen del proyecto -->
     <img [src]="imagenUrl" alt="Imagen del proyecto" class="proyecto-imagen" />
   </div>
   <div class="contenido-blog">
+    <!-- Título del proyecto -->
     <h1 class="titulo-blog">{{ titulo }}</h1>
+
+    <!-- Fecha de publicación -->
     <p class="fecha-publicacion">{{ fechaPublicacion }}</p>
+
+    <!-- Descripción del proyecto -->
     <div class="descripcion-blog">
       <p [innerHTML]="descripcion"></p>
     </div>
+
+    <!-- Explicación adicional del proyecto -->
     <div class="explicacion-proyecto">
       <p>{{ explicacion }}</p>
     </div>
+
+    <!-- Lista de desafíos -->
     <div class="desafios">
       <ul>
         <li *ngFor="let desafio of desafios">{{ desafio }}</li>
       </ul>
     </div>
+
+    <!-- Tecnologías utilizadas -->
     <div class="tecnologias-blog">
       <h2>Tecnologías Utilizadas</h2>
       <div class="lista-tecnologias">
         <span *ngFor="let tecnologia of tecnologias" class="tecnologia">{{ tecnologia }}</span>
       </div>
     </div>
+
     <!-- Botón dinámico para enlaces externos e internos -->
-    <a (click)="redirigir()" class="btn-proyecto">
+    <a (click)="redirigir(); $event.preventDefault()" class="btn-proyecto">
       Ver Proyecto
     </a>
   </div>

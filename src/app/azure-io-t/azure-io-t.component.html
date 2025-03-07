@@ -1,12 +1,56 @@
-<div class="documento-container">
-  <h2>Conexión Raspberry Pi y AZURE</h2>
-  <p>
-    El siguiente es el enlace para que conozcas el informe IEEE de mi proyecto de conexión entre Azure y
-    Raspberry Pi, desarrollado como parte de una de mis profundizaciones en la carrera de Ingeniería de
-    Software en el Politécnico Grancolombiano.
-    Recuerda que todo el contenido de esta web está sujeto a la licencia MIT.
-  </p>
-  <a [href]="documentoUrl" download="InformeIEEE.docx" class="btn-descargar">
-    Descarga el Informe IEEE
-  </a>
-</div>
+<section class="hero-section">
+  <div class="content">
+    <h1 class="title">Azure Raspberry e IOT</h1>
+    <p class="description">
+      Para crear una cuenta Azure for Students, dirígete a la página oficial en <a href="https://azure.microsoft.com/en-us/free/students/"> Azure for students</a>. Esta cuenta ofrece acceso gratuito a varios servicios de Azure sin necesidad de ingresar una tarjeta de crédito, aunque es limitada en cuanto al número de consultas y recursos disponibles, adecuándose a los requerimientos de los estudiantes. Es necesario contar con una cuenta de correo electrónico educativa válida (generalmente con extensión .edu u otra proporcionada por la universidad), que permita verificar tu estatus como estudiante. Luego, sigue las instrucciones de registro para acceder a los beneficios disponibles para estudiantes
+    </p>
+    <img
+      src="assets/images/raspiParts.png"
+      alt="Imagen de portada"
+      class="hero-image"
+    />
+    <p class="description">
+      Luego, en la página principal de Azure, usa el buscador para encontrar el "Centro de IoT" y selecciona la opción para crear un nuevo espacio de trabajo. Una vez dentro, comienza la configuración del entorno de trabajo.
+    </p>
+    <img
+      src="assets/images/raspiParts2.png"
+      alt="Imagen secundaria"
+      class="hero-image"
+    />
+
+    <!-- Nueva sección de imagen y texto -->
+    <p class="description">
+      Una vez configurado el entorno de trabajo, es importante conectar tu dispositivo Raspberry Pi al centro de IoT de Azure. Para ello, necesitarás instalar el SDK de Azure IoT en tu Raspberry Pi y seguir los pasos de configuración proporcionados en la documentación oficial.
+    </p>
+    <img
+      src="assets/images/raspiParts3.png"
+      alt="Imagen de configuración"
+      class="hero-image"
+    />
+
+    <!-- Nueva sección de imagen y texto -->
+    <p class="description">
+      Finalmente, podrás monitorear y controlar tu dispositivo Raspberry Pi desde la nube de Azure. Esto te permitirá realizar análisis de datos en tiempo real, automatizar tareas y mucho más, aprovechando al máximo las capacidades de IoT.
+    </p>
+    <img
+      src="assets/images/raspiParts4.png"
+      alt="Imagen de monitoreo"
+      class="hero-image"
+    />
+
+       <!-- Nueva sección de imagen y texto -->
+       <p class="description">
+        Finalmente, podrás monitorear y controlar tu dispositivo Raspberry Pi desde la nube de Azure. Esto te permitirá realizar análisis de datos en tiempo real, automatizar tareas y mucho más, aprovechando al máximo las capacidades de IoT.
+      </p>
+      <img
+        src="assets/images/raspiParts4.png"
+        alt="Imagen de monitoreo"
+        class="hero-image"
+      />
+
+    <!-- Enlace "Seguir leyendo" -->
+    <a [routerLink]="['/ruta-de-destino']" class="read-more-link">
+      Seguir leyendo
+    </a>
+  </div>
+</section>

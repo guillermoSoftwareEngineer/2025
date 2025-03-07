@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -21,7 +21,7 @@ export class ProyectoComponent implements OnInit {
   explicacion: string = '';
   desafios: string[] = [];
   tecnologias: string[] = [];
-  enlaceExterno: string = '';
+  enlaceExterno: string = ''; // Cambiado a solo string
   esRutaExterna: boolean = false;
 
   constructor(
@@ -72,15 +72,18 @@ export class ProyectoComponent implements OnInit {
     });
   }
 
-  // Método para manejar la redirección y seleccionar si se hace el enlace a una direccion web o una routes
+  // Método para manejar la redirección
   redirigir(): void {
     if (this.esRutaExterna) {
-      // Sanitizar la URL antes de abrirla es decir dejar que se acepte enlazar a otra url (por defecto angular no lo permite)
-      const urlSanitizada = this.sanitizer.bypassSecurityTrustUrl(this.enlaceExterno);
-      window.open(urlSanitizada.toString(), '_blank');
+      // Abrir enlace externo en una nueva pestaña
+      window.open(this.enlaceExterno, '_blank');
     } else {
       // Redirigir a la ruta interna usando el Router
-      this.router.navigate([this.enlaceExterno]);
+      this.router.navigate([this.enlaceExterno]).then(success => {
+        if (!success) {
+          console.error('Error: No se pudo redirigir a la ruta:', this.enlaceExterno);
+        }
+      });
     }
   }
 }

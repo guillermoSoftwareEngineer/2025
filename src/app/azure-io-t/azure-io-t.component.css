@@ -1,60 +1,77 @@
-/* Contenedor principal */
-.documento-container {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* Paleta de colores para modo oscuro */
+:host {
+  --primary-color: #1a1a1a; /* Fondo oscuro */
+  --secondary-color: #2c2c2c; /* Fondo secundario */
+  --text-color: #ffffff; /* Texto blanco */
+  --accent-color: #00ff88; /* Color de acento (verde neón) */
+}
+
+.hero-section {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-/* Título */
-.documento-container h2 {
-  font-size: 2rem;
-  color: #164E6E;
-  margin-bottom: 20px;
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
 }
 
-/* Párrafo descriptivo */
-.documento-container p {
-  font-size: 1.1rem;
-  color: #333;
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
   line-height: 1.6;
-  margin-bottom: 30px;
 }
 
-/* Botón de descarga */
-.btn-descargar {
-  background-color: #2C7CCC;
-  color: white;
-  padding: 10px 20px;
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el enlace "Seguir leyendo" */
+.read-more-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
-.btn-descargar:hover {
-  background-color: #E76F51;
+.read-more-link:hover {
+  background-color: #00cc6a; /* Cambio de color al pasar el mouse */
 }
 
-/* Diseño Responsivo */
+/* Estilos responsivos */
 @media (max-width: 768px) {
-  .documento-container {
-    padding: 30px 15px;
+  .title {
+    font-size: 2rem;
   }
 
-  .documento-container h2 {
-    font-size: 1.8rem;
-  }
-
-  .documento-container p {
+  .description {
     font-size: 1rem;
   }
 
-  .btn-descargar {
+  .read-more-link {
     font-size: 0.9rem;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
   }
 }
