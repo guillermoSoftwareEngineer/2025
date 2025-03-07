@@ -7,6 +7,8 @@ import { ArticuloComponent } from './articulo/articulo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ProyectoComponent } from './proyecto/proyecto.component';
 import { AzureComponent } from './azure-io-t/azure-io-t.component';
+import { AzureIoT2Component } from './azure-io-t-2/azure-io-t-2.component';
+import { AzureIoT3Component } from './azure-io-t-3/azure-io-t-3.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent, title: 'Inicio' },
@@ -17,5 +19,7 @@ export const routes: Routes = [
   { path: 'articulo/:id', component: ArticuloComponent, title: 'Artículo' },
   { path: 'contacto', component: ContactoComponent, title: 'Contacto' },
   { path: 'azure-io-t', component: AzureComponent, title: 'Azure IoT' },
+  { path: 'azure-io-t-2', component: AzureIoT2Component, title: 'Azure IoT - Parte 2' },
+  { path: 'azure-io-t-3', component: AzureIoT3Component, title: 'Azure IoT - Parte 3' },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

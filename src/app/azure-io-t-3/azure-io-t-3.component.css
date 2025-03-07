@@ -1,0 +1,114 @@
+/* Paleta de colores para modo oscuro */
+:host {
+  --primary-color: #1a1a1a; /* Fondo oscuro */
+  --secondary-color: #2c2c2c; /* Fondo secundario */
+  --text-color: #ffffff; /* Texto blanco */
+  --accent-color: #00ff88; /* Color de acento (verde neón) */
+}
+
+.hero-section {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para las secciones con imágenes */
+.section-with-image {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-with-image.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-with-image img,
+.section-with-image.reverse img {
+  width: 50%;
+}
+
+.section-with-image p,
+.section-with-image.reverse p {
+  width: 50%;
+}
+
+/* Estilos para la sección de ancho completo */
+.section-full-width {
+  margin-bottom: 2rem;
+}
+
+.section-full-width img {
+  width: 100%;
+}
+
+/* Estilos para el enlace "Volver a Artículos" */
+.read-more-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-link:hover {
+  background-color: #00cc6a; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .section-with-image,
+  .section-with-image.reverse {
+    flex-direction: column;
+  }
+
+  .section-with-image img,
+  .section-with-image.reverse img,
+  .section-with-image p,
+  .section-with-image.reverse p {
+    width: 100%;
+  }
+}
