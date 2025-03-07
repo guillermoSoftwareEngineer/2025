@@ -1,0 +1,81 @@
+<section class="hero-section">
+  <div class="content">
+    <h1 class="title">Azure Raspberry e IOT - Parte 4</h1>
+
+    <!-- Primera sección: Imagen y texto -->
+    <p class="description">
+      La cadena de conexión principal actúa como una credencial que autentica y permite que el dispositivo se conecte de forma segura al IoT Hub. Contiene varios datos importantes, como:
+    </p>
+    <ul class="description">
+      <li><b>HostName:</b> Es el nombre del IoT Hub al que el dispositivo se va a conectar. Esto identifica al IoT Hub específico en la nube de Azure.</li>
+      <li><b>DeviceId:</b> Es el identificador único del dispositivo dentro del IoT Hub. En este caso, el dispositivo se llama RaspberryPI.</li>
+      <li><b>SharedAccessKey:</b> Es una clave de acceso compartido que se utiliza para autenticar la conexión del dispositivo al IoT Hub. Esta clave asegura que solo los dispositivos autorizados puedan conectarse al IoT Hub.</li>
+    </ul>
+    <img
+      src="assets/images/raspiParts16.png"
+      alt="Imagen de Azure IoT Edge"
+      class="hero-image"
+    />
+
+    <!-- Segunda sección: Imagen y texto -->
+    <p class="description">
+      En la página <a target="_blank" href="https://azure-samples.github.io/raspberry-pi-web-simulator/#getstarted">raspberry-pi-web-simulator</a>, donde encontramos el simulador, en el código de la derecha, en la línea 15, copiaremos este código y lo utilizaremos allí.
+    </p>
+    <img
+      src="assets/images/raspiParts17.png"
+      alt="Imagen de módulos personalizados"
+      class="hero-image"
+    />
+
+    <!-- Tercera sección: Imagen y texto -->
+    <p class="description">
+      Ya estaría configurado el dispositivo para recibir datos, pero no podríamos verlos a menos que demos clic al botón de "Run" o ejecutemos el siguiente comando:
+    </p>
+    <img
+      src="assets/images/raspiParts18.png"
+      alt="Imagen de Azure Portal"
+      class="hero-image"
+    />
+
+    <!-- Cuarta sección: Imagen y texto -->
+    <p class="description">
+      Es claro que se debe cambiar <code>CONNECTION_STRING=</code> por el valor de nuestra cadena de conexión principal, y así obtendremos los datos del sensor.
+    </p>
+    <img
+      src="assets/images/raspiParts19.png"
+      alt="Imagen de Azure Portal"
+      class="hero-image"
+    />
+
+    <!-- Quinta sección: Imagen y texto -->
+    <p class="description">
+      En la sección izquierda, el panel de "Uso de IoT Hub" muestra información clave sobre el uso de mensajes en el día. Se observa que se han utilizado 127 mensajes hoy, de un límite diario de 400,000 mensajes. Esto indica que, aunque ya hay actividad, la cuota diaria no se está alcanzando, lo cual es positivo ya que permite bastante margen para futuros mensajes y comunicación.
+    </p>
+    <p class="description">
+      En el gráfico "Número de mensajes usados a lo largo del tiempo", se puede observar un incremento significativo y continuo, que se hace más pronunciado alrededor de las 3:30 p.m., alcanzando 121 mensajes en poco tiempo. Esto sugiere que hubo un aumento repentino en la actividad del dispositivo simulado, posiblemente debido a la activación de la simulación.
+    </p>
+    <img
+      src="assets/images/raspiParts20.png"
+      alt="Imagen de Azure Portal"
+      class="hero-image"
+    />
+
+    <!-- Sexta sección: Imagen y texto -->
+    <p class="description">
+      En la gráfica "Mensajes del dispositivo a la nube", podemos observar el comportamiento del envío de mensajes desde el dispositivo Raspberry Pi simulado a la nube. Durante el período registrado, hubo varios picos notables de actividad, especialmente entre las 3:15 p.m. y las 3:30 p.m., donde se alcanza un máximo cercano a 35 mensajes. Estos picos indican que el dispositivo Raspberry Pi envió telemetría de manera intermitente, mostrando actividad en ciertos intervalos y luego retornando a niveles bajos de comunicación. En total, se enviaron 119 mensajes hasta el momento registrado. Esto puede ser causado por latencias en una conexión de red inestable.
+    </p>
+    <p class="description">
+      En la gráfica "Dispositivos conectados", se muestra el estado de conexión de los dispositivos al IoT Hub. Se observa un cambio en la conexión alrededor de las 3:20 p.m., cuando el número de dispositivos conectados pasa de 0 a 1, es decir, en el momento de ejecución de la simulación. Esto indica que el dispositivo se conectó al IoT Hub en ese momento y permaneció conectado sin interrupciones hasta el final del período mostrado. La conexión del dispositivo parece ser estable, con un valor máximo de 1 dispositivo conectado.
+    </p>
+    <img
+      src="assets/images/raspiParts21.png"
+      alt="Imagen de Azure Portal"
+      class="hero-image"
+    />
+
+    <!-- Enlace "Volver a Artículos" -->
+    <a routerLink="/proyectos" class="read-more-link">
+      Volver a Proyectos
+    </a>
+  </div>
+</section>

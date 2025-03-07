@@ -9,6 +9,7 @@ import { ProyectoComponent } from './proyecto/proyecto.component';
 import { AzureComponent } from './azure-io-t/azure-io-t.component';
 import { AzureIoT2Component } from './azure-io-t-2/azure-io-t-2.component';
 import { AzureIoT3Component } from './azure-io-t-3/azure-io-t-3.component';
+import { AzureIoT4Component } from './azure-io-t-4/azure-io-t-4.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent, title: 'Inicio' },
@@ -21,5 +22,6 @@ export const routes: Routes = [
   { path: 'azure-io-t', component: AzureComponent, title: 'Azure IoT' },
   { path: 'azure-io-t-2', component: AzureIoT2Component, title: 'Azure IoT - Parte 2' },
   { path: 'azure-io-t-3', component: AzureIoT3Component, title: 'Azure IoT - Parte 3' },
+  { path: 'azure-io-t-4', component: AzureIoT4Component, title: 'Azure IoT - Parte 4' },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

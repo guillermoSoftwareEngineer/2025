@@ -2,7 +2,7 @@
 :host {
   --primary-color: #1a1a1a; /* Fondo oscuro */
   --secondary-color: #2c2c2c; /* Fondo secundario */
-  --text-color: #ffffff; /* Texto blanco */
+  --text-color: #BBBBBB; /* Texto blanco */
   --accent-color: #00ff88; /* Color de acento (verde neón) */
 }
 
