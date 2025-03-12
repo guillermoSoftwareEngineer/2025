@@ -1,0 +1,11 @@
+<div class="lista-proyectos">
+  <h2>Lista de Proyectos</h2>
+  <ul>
+    <li *ngFor="let proyecto of proyectos">
+      <a [routerLink]="proyecto.ruta" class="proyecto-link">
+        <h3>{{ proyecto.titulo }}</h3>
+        <p>{{ proyecto.descripcion }}</p>
+      </a>
+    </li>
+  </ul>
+</div>

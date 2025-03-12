@@ -53,7 +53,7 @@ export class InMemoryDataService implements InMemoryDbService {
                       mostrando creatividad, capacidad de resolución de problemas y dominio de tecnologías clave para la industria,
                       haciendo de este proyecto un claro ejemplo de versatilidad y aplicación práctica en entornos profesionales.`,
         tecnologias: ['Angular', 'TypeScript', 'CSS', 'Electricidad', 'Electrónica', 'Responsive'],
-        enlaceExterno: 'https://guillermosoftwareengineer.github.io/ElectricCalculator/#'
+        enlaceExterno: 'https://guillermosoftwareengineer.github.io/ElectricCalculator/#' // con http para enlaces externos
       },
       {
         id: '2',
@@ -61,8 +61,73 @@ export class InMemoryDataService implements InMemoryDbService {
         titulo: 'Conectividad IoT: Integración de Raspberry Pi Simulado con Azure IoT Hub',
         descripcion: 'Este proyecto demuestra la integración de un simulador de Raspberry Pi con Azure IoT Hub, permitiendo la transmisión en tiempo real de datos hacia la nube para su análisis y monitoreo remoto. <br><br> Su objetivo es optimizar la gestión de dispositivos IoT mediante una arquitectura escalable y segura, alineada con la transformación digital y la Industria 4.0. <br><br> Uno de los principales desafíos fue la correcta configuración del IoT Hub en Azure, asegurando la autenticación y comunicación fluida entre el dispositivo simulado y la nube. <br><br> Se implementaron protocolos eficientes para la transmisión de datos, garantizando una respuesta rápida y confiable en el procesamiento de información. <br><br> Otro reto clave fue la visualización de los datos en tiempo real, lo que requirió configurar paneles de monitoreo en Azure y ajustar los parámetros de conexión para asegurar estabilidad y precisión en la comunicación. La integración de IoT con la nube no solo mejora la capacidad de análisis y supervisión de dispositivos remotos, sino que también fortalece habilidades en computación en la nube, protocolos de comunicación y seguridad en IoT. Este proyecto refleja conocimientos en redes, sistemas embebidos e integración de plataformas en la nube, aplicables en diversos sectores tecnológicos. <br><br> Además, representa un enfoque práctico en la automatización y gestión inteligente de dispositivos, clave para el desarrollo de infraestructuras IoT modernas. ',
         tecnologias: ['Programación', 'Electrónica', 'IoT', 'Azure'],
+        enlaceExterno: 'azure-io-t' // Sin / para llevar a archivos del proyecto
+      },
+      {
+        id: '3',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
+        enlaceExterno: 'azure-io-t'
+      },
+      {
+        id: '4',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
+        enlaceExterno: 'azure-io-t'
+      },
+      {
+        id: '5',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
+        enlaceExterno: 'azure-io-t'
+      },
+      {
+        id: '6',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
+        enlaceExterno: 'azure-io-t'
+      },
+      {
+        id: '7',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
+        enlaceExterno: 'azure-io-t'
+      },
+      {
+        id: '8',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
+        enlaceExterno: 'azure-io-t'
+      },
+      {
+        id: '9',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
+        enlaceExterno: 'azure-io-t'
+      },
+      {
+        id: '10',
+        imagenUrl: 'assets/images/image',
+        titulo: 'Titulo',
+        descripcion: 'Descripcion del proyecto',
+        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
         enlaceExterno: 'azure-io-t'
       }
+
     ];
 
     // 🔹 Verificación de URL antes de devolver los datos asegura la htttps segura ya que angular la bloquea por ser sospechosa

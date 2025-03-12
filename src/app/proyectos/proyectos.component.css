@@ -25,6 +25,12 @@
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
@@ -59,7 +65,7 @@
   text-decoration: none;
   border-radius: 5px;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   flex: 1;
   text-align: center;
 }
@@ -70,10 +76,32 @@
 
 .project-card .btn:hover {
   background-color: #4B0352;
+  transform: scale(1.05);
 }
 
 .project-card .btn.secondary:hover {
   background-color: #E76F51;
+  transform: scale(1.05);
+}
+
+/* Estilos para el enlace "Más Proyectos" */
+.more-projects {
+  margin-top: 40px;
+}
+
+.more-projects-btn {
+  background-color: #3366cc;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.more-projects-btn:hover {
+  background-color: #4B0352;
+  transform: scale(1.05);
 }
 
 /* Diseño Responsivo */

@@ -1,0 +1,91 @@
+/* Estilos generales */
+.lista-proyectos {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Fondo oscuro */
+  color: #e0e0e0; /* Gris claro para el texto */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #ffffff; /* Blanco para el título */
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem; /* Tamaño grande para el título */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.proyecto-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 15px;
+  background-color: #1e1e1e; /* Fondo oscuro para cada proyecto */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Centrar el texto dentro del enlace */
+}
+
+.proyecto-link:hover {
+  background-color: #2e2e2e; /* Fondo más claro al hacer hover */
+}
+
+h3 {
+  margin: 0;
+  color: #bb86fc; /* Color morado para los títulos de los proyectos */
+  font-size: 1.5rem; /* Tamaño grande para el título del proyecto */
+}
+
+p {
+  margin: 10px 0 0;
+  color: #b0b0b0; /* Gris más claro para la descripción */
+  font-size: 1rem; /* Tamaño estándar para la descripción */
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.75rem; /* Tamaño más pequeño para pantallas medianas */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* Tamaño más pequeño para el título del proyecto */
+  }
+
+  p {
+    font-size: 0.9rem; /* Tamaño más pequeño para la descripción */
+  }
+
+  .proyecto-link {
+    padding: 10px; /* Menos padding en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+
+  h3 {
+    font-size: 1rem; /* Tamaño más pequeño para el título del proyecto */
+  }
+
+  p {
+    font-size: 0.8rem; /* Tamaño más pequeño para la descripción */
+  }
+
+  .proyecto-link {
+    padding: 8px; /* Menos padding en pantallas muy pequeñas */
+  }
+}
