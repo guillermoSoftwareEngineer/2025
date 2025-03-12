@@ -97,11 +97,11 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: '7',
-        imagenUrl: 'assets/images/image',
-        titulo: 'Titulo',
-        descripcion: 'Descripcion del proyecto',
-        tecnologias: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3', 'Tecnologia4'],
-        enlaceExterno: 'azure-io-t'
+        imagenUrl: 'assets/images/cards.jpg',
+        titulo: 'Cards Animadas y Responsivas: Diseño Moderno y Adaptable',
+        descripcion: 'Este proyecto consiste en el desarrollo de cards animadas y responsivas, diseñadas para ofrecer una experiencia visual moderna e interactiva en cualquier dispositivo. Las cards cuentan con fondos interactivos generados por IA, que incluyen videos dinámicos para aumentar el impacto visual. Para garantizar la legibilidad, se implementó un sistema de cambio de colores en títulos y párrafos que contrastan perfectamente con los fondos de video, asegurando una experiencia de usuario óptima. <br><br> El diseño se basa en una maquetación limpia y semántica con HTML5, complementada con estilos avanzados en CSS3. Se utilizaron animaciones hover para crear efectos dinámicos al interactuar con las cards, junto con transiciones suaves, transformaciones y box-shadow para añadir profundidad y realismo. Además, se definieron endpoints de diseño responsivo para garantizar que las cards se adapten de manera fluida a diferentes tamaños de pantalla, desde móviles hasta pantallas grandes. <br><br> En la parte de interactividad, se implementó manipulación básica del DOM mediante JavaScript, permitiendo un comportamiento dinámico y personalizado en las cards. Este proyecto demuestra habilidades sólidas en diseño front-end, animaciones creativas y desarrollo responsivo, utilizando tecnologías como HTML5, CSS3 y JavaScript',
+        tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
+        enlaceExterno: 'https://guillermosoftwareengineer.github.io/cards/'
       },
       {
         id: '8',
